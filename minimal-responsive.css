@@ -4,6 +4,7 @@ MIT License
 github.com/lbsonley/minimal-responsive-css-framework
 ****************************************************/
 html{
+	background-color:#f8f8f8;
 	color:#252525;
 	text-align:left;
 	font-family:sans-serif;
@@ -13,7 +14,7 @@ html, body{
 	overflow-x:hidden;
 	overflow-y:auto;
 }
-/*BASIC COLUMN STRUCTURE
+/*BASIC COLUMN STRUCTURE - screens smaller than 568px
 *******************************************************/
 .container{
 	margin: 0 auto;
@@ -25,6 +26,10 @@ html, body{
 	display:block;
 	clear:both;
 }
+.text{
+	width:280px;
+	margin:0 auto;
+}
 .one-column, 
 .two-column, 
 .three-column, 
@@ -32,14 +37,16 @@ html, body{
 .four-column, 
 .three-four-column{
 	width:280px;
-	margin:0 0.625em 0 0.625em;
-	padding:0 0.625em 0 0.625em;
+	margin:0 20px;
+	padding:0;
 	min-height:1px;
 	float:left;
+	position:relative;
 }
 .nest>*{
 	margin:0;
-	padding-left:0;}
+	padding-left:0;
+}
 hr{
 	width:280px; 
 	margin: 5em auto;
@@ -47,24 +54,24 @@ hr{
 /*RESPONSIVE COLUMN STRUCTURE
 *******************************************************/
 /*screens larger than 568px*/
-@media only screen and (min-width:568px) {
+@media only screen and (min-width:567.99px) {
 	.one-column, 
 	.two-column, 
 	.three-column, 
 	.two-three-column, 
 	.four-column, 
 	.three-four-column{
-		margin:0 0.625em 0 0.625em;
-		padding:0 0.625em 0 0.625em;
+		margin:0 20px;
 	}
+	
 	.container{width:540px;}
-	.one-column{width:500px;}
-	hr{width:500px; margin: 6em auto;}
+	.text,.one-column{width:500px;}
 	.two-column{width:230px;}
 	.three-column{width:140px;}
 	.two-three-column{width:320px;}
 	.four-column{width:95px;}
 	.three-four-column{width:365px;}
+	hr{width:500px; margin: 6em auto;}
 	
 	.nest>*:first-child{
 		margin-left:0;
@@ -75,57 +82,62 @@ hr{
 		padding-right:0;
 	}
 }
-/*screens larger than 768px*/
-@media only screen and (min-width:768px){
-	.container{width:720px}
-	.one-column{width:680px}
-	hr{width:680px; margin: 6em auto;}
-	.two-column{width:320px}
-	.three-column{width:200px}
-	.two-three-column{width:440px;}
-	.four-column{width:140px}
-	.three-four-column{width:500px;}
-}
 /*screens larger than 960px*/
-@media only screen and (min-width: 960px){
-	.container{width:960px;}
-	.one-column{width:920px;}
-	hr{width:920px; margin:6em auto;}
-	.two-column{width:440px;}
-	.three-column{width:280px;}
-	.two-three-column{width:600px;}
-	.four-column{width:200px;}
-	.three-four-column{width:680px;}
+@media only screen and (min-width: 959.99px){
+	.container{width:940px;}
+	.one-column{width:900px;}
+	.two-column{width:430px;}
+	.three-column{width:273.33px;}
+	.two-three-column{width:586.66px;}
+	.four-column{width:195px;}
+	.three-four-column{width:665px;}
+	hr{width:900px; margin:6em auto;}
 }
-
+/*screens larger than 1600*/
+@media only screen and (min-width:1599.99px){
+	.container{width:1320px;}
+	.one-column{width:1280px;}
+	.two-column{width:620px;}
+	.three-column{width:400px;}
+	.two-three-column{width:840px;}
+	.four-column{width:290px;}
+	.three-four-column{width:950px;}
+	hr{width:1280px;margin:6em auto;}
+}
 /*TYPOGRAPHY
 *******************************************************/
+h1, 
+h2, 
+h3,
+h4, 
+h5, 
+h6			{text-transform:uppercase;}
 h1{
-	font-size:2.5em;
-	padding:0.2em;
+	font-size:2.0em;
+	padding-bottom:0.2em;
 }
 h2{
-	font-size:2.15em;
-	padding-bottom:0.5em;
-}
-h3{
 	font-size:1.75em;
 	padding-bottom:0.5em;
 }
-h4{	
+h3{
 	font-size:1.5em;
+	padding-bottom:0.5em;
+}
+h4{	
+	font-size:1.25em;
 	padding-bottom:0.65em;
 }
 h5{	
-	font-size:1.25em;
+	font-size:1.1em;
 	padding-bottom:0.75em;
 }
 h6{	
-	font-size:1.1em;
-	padding-bottom:0.65em;
+	font-size:0.9em;
+	padding-bottom:0.5em;
 }
 p{
-	font-size:.9em;
+	font-size:0.9em;
 	word-spacing:-0.1px;
 	line-height:1.5em;
 	padding-bottom:1em;
@@ -136,12 +148,12 @@ p{
 .fw-img{
 	background-repeat:no-repeat;
 	background-size:cover;
-	background-position:center center;
+	background-position:center bottom;
 }
 /*column-width image*/
 .cw-img{
 	width:100%;
-	padding:0 0 1.25em 0;
+	margin:0;
 }
 /*column-width icon*/
 .cw-icon{
@@ -217,6 +229,7 @@ li{
 	line-height:1.5em;
 	padding-bottom:.35em;
 }
+/*unordered lists*/
 ul li{
 	list-style-type:circle;
 	margin-left:1.25em;
@@ -226,6 +239,7 @@ ol ul li{
 	list-style-type:disc;
 	margin-left:3em;
 }
+/*ordered lists*/
 ol li{
 	list-style-type:decimal;
 	margin-left:1.25em;
@@ -263,7 +277,7 @@ label{
 input[type=text], 
 input[type=email], 
 input[type=password]{
-	width:100%;
+	width:90%;
 	font-size:0.9em;
 	line-height:2.25em;
 	border:1px solid #ababab;
@@ -271,7 +285,7 @@ input[type=password]{
 	border-radius:5px;
 }
 textarea{
-	width:100%;
+	width:90%;
 	font-size:0.9em;
 	line-height:1.6em;
 	border:1px solid #ababab;
