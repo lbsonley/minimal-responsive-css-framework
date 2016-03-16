@@ -1,38 +1,49 @@
+/*base styles
+*******************************************************/
+html {
+  background-color: #f8f8f8;
+  color: #252525;
+  font-family: sans-serif;
+  text-align: left; }
+
 /*TYPOGRAPHY
 *******************************************************/
-h1, 
-h2, 
+h1,
+h2,
 h3,
-h4, 
-h5, 
-h6			{text-transform:uppercase;}
-h1{
-	font-size:2.0em;
-	padding-bottom:0.2em;
-}
-h2{
-	font-size:1.75em;
-	padding-bottom:0.5em;
-}
-h3{
-	font-size:1.5em;
-	padding-bottom:0.5em;
-}
-h4{	
-	font-size:1.25em;
-	padding-bottom:0.65em;
-}
-h5{	
-	font-size:1.1em;
-	padding-bottom:0.75em;
-}
-h6{	
-	font-size:0.9em;
-	padding-bottom:0.5em;
-}
-p{
-	font-size:0.9em;
-	word-spacing:-0.1px;
-	line-height:1.5em;
-	padding-bottom:1em;
-}
+h4,
+h5,
+h6 {
+  text-transform: uppercase; }
+
+h1 {
+  font-size: 2.0em;
+  padding-bottom: 0.2em; }
+
+h2 {
+  font-size: 1.75em;
+  padding-bottom: 0.5em; }
+
+h3 {
+  font-size: 1.5em;
+  padding-bottom: 0.5em; }
+
+h4 {
+  font-size: 1.25em;
+  padding-bottom: 0.65em; }
+
+h5 {
+  font-size: 1.1em;
+  padding-bottom: 0.75em; }
+
+h6 {
+  font-size: 0.9em;
+  padding-bottom: 0.5em; }
+
+p {
+  font-size: 0.9em;
+  word-spacing: -0.1px;
+  line-height: 1.5em;
+  padding-bottom: 1em; }
+
+/*# sourceMappingURL=typography.css.map */

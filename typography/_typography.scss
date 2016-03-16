@@ -1,3 +1,15 @@
+$bg-color: #f8f8f8;
+$font-color: #252525;
+$font-fam: sans-serif;
+
+/*base styles
+*******************************************************/
+html{
+	background-color: $bg-color;
+	color: $font-color;
+	font-family: $font-fam;
+	text-align:left;
+}
 /*TYPOGRAPHY
 *******************************************************/
 h1, 

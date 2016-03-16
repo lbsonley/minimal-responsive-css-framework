@@ -1,16 +1,5 @@
 /*my reset | a mixture of meyer-web and normalize
 *************************************************/
-html{
-	background-color:#f8f8f8;
-	color:#252525;
-	text-align:left;
-	font-family:sans-serif;
-	/*normalize - prevent iOS and IE text 
-	size adjust after device orientation 
-	change, without disabling user zoom*/
-	-ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
 html, body{
 	/*removes white space on right of screen on iPhone*/
 	overflow-x:hidden;

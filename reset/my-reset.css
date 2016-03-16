@@ -1,24 +1,12 @@
 /*my reset | a mixture of meyer-web and normalize
 *************************************************/
-html{
-	background-color:#f8f8f8;
-	color:#252525;
-	text-align:left;
-	font-family:sans-serif;
-	/*normalize - prevent iOS and IE text 
-	size adjust after device orientation 
-	change, without disabling user zoom*/
-	-ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-html, body{
-	/*removes white space on right of screen on iPhone*/
-	overflow-x:hidden;
-	overflow-y:auto;
-}
-section{
-	position:relative;
-}
+html, body {
+  /*removes white space on right of screen on iPhone*/
+  overflow-x: hidden;
+  overflow-y: auto; }
+
+section {
+  position: relative; }
 
 /*from meyer-web reset
 **********************************************/
@@ -31,24 +19,25 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	/*font: inherit;*/
-	vertical-align: baseline;
-}
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  /*font: inherit;*/
+  vertical-align: baseline; }
+
 /*HTML5 display-role reset for older browsers 
 **********************************************/
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, main, menu, nav, 
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav,
 section, summary {
-	display: block;
-}
+  display: block; }
+
 body {
-	line-height:1;
-}
+  line-height: 1; }
+
+/*# sourceMappingURL=my-reset.css.map */
