@@ -1,0 +1,42 @@
+/*BUTTONS
+*******************************************************/
+a.button, 
+button, 
+input[type=button], 
+input[type=submit] {
+	font-size:.9em;
+	font-weight:bold;
+	line-height:1em;
+	text-decoration:none;
+	text-transform:uppercase;
+	margin:0.25em 0.25em 0.25em 0.25em;
+	padding:0.625em 1.25em 0.625em 1.25em;
+	border:2px solid #919191;
+	border-radius:5px;
+	display:inline-block;
+	box-sizing:border-box;
+	color:#919191;
+	background-color:#fff;
+	cursor:pointer;
+}
+a.button:hover, 
+button:hover, 
+input[type=button]:hover, 
+input[type=submit]:hover{
+	color:#5e5e5e;
+	border-color:#5e5e5e;
+}
+a.bright, 
+button.bright, 
+input.bright{
+	color:#fff;
+	background-color:#ffa500;
+	border-color:#ffa500;
+}
+a.bright:hover, 
+button.bright:hover, 
+input.bright:hover{
+	color:#fff;
+	background-color:#ff9000;
+	border-color:#ff9000;
+}

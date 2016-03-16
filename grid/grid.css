@@ -1,0 +1,102 @@
+/*ONE-OFFS
+*******************************************************/
+.clearfix:after{
+	content:'';
+	display:block;
+	clear:both;
+}
+hr{
+	display:block;
+	border-width:0.5px;
+	border-color:#fff;
+}
+/*BASIC COLUMN STRUCTURE - screens smaller than 568px
+*******************************************************/
+.container{
+	margin: 0 auto;
+	width:320px;
+}
+.container:after, 
+.nest:after{
+	content:'';
+	display:block;
+	clear:both;
+}
+.text{
+	width:280px;
+	margin:0 auto;
+}
+.one-column, 
+.two-column, 
+.three-column, 
+.two-three-column, 
+.four-column, 
+.three-four-column{
+	width:280px;
+	margin:0 20px;
+	padding:0;
+	min-height:1px;
+	float:left;
+	position:relative;
+}
+.nest>*{
+	margin:0;
+	padding-left:0;
+}
+hr{
+	width:280px; 
+	margin: 5em auto;
+}
+/*RESPONSIVE COLUMN STRUCTURE
+*******************************************************/
+/*screens larger than 568px*/
+@media only screen and (min-width:567.99px) {
+	.one-column, 
+	.two-column, 
+	.three-column, 
+	.two-three-column, 
+	.four-column, 
+	.three-four-column{
+		margin:0 20px;
+	}
+	
+	.container{width:540px;}
+	.text,.one-column{width:500px;}
+	.two-column{width:230px;}
+	.three-column{width:140px;}
+	.two-three-column{width:320px;}
+	.four-column{width:95px;}
+	.three-four-column{width:365px;}
+	hr{width:500px; margin: 6em auto;}
+	
+	.nest>*:first-child{
+		margin-left:0;
+		padding-left:0;
+	}
+	.nest>*:last-child{
+		margin-right:0;
+		padding-right:0;
+	}
+}
+/*screens larger than 960px*/
+@media only screen and (min-width: 959.99px){
+	.container{width:940px;}
+	.one-column{width:900px;}
+	.two-column{width:430px;}
+	.three-column{width:273.33px;}
+	.two-three-column{width:586.66px;}
+	.four-column{width:195px;}
+	.three-four-column{width:665px;}
+	hr{width:900px; margin:6em auto;}
+}
+/*screens larger than 1600*/
+@media only screen and (min-width:1599.99px){
+	.container{width:1320px;}
+	.one-column{width:1280px;}
+	.two-column{width:620px;}
+	.three-column{width:400px;}
+	.two-three-column{width:840px;}
+	.four-column{width:290px;}
+	.three-four-column{width:950px;}
+	hr{width:1280px;margin:6em auto;}
+}

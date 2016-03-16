@@ -1,0 +1,132 @@
+/*headings alignment*/
+.title>h1{
+	margin:1.5em 0 0.5em 0;
+	line-height:0.8em;}
+.title>h5{margin:0 0 0.5em 0;}
+.title{text-align:center;}
+.h3-h6-inline{line-height:1.85em;}
+.center-text{text-align:center;}
+.so{
+	background-color:#cccccc;
+	padding:0 3px;
+	border:1px solid #c2c2c2;
+	border-radius:5px;
+	white-space:nowrap;}
+/*full width image demo*/
+#fw-img{
+	margin-top:5em;
+	margin-bottom:4em;
+	background-image:url('img/forest.jpg');
+	height:35em;
+}
+/*vertical center demo*/
+#vcenter-demo{
+	margin-top:5em;
+	margin-bottom:5em;
+	background-image:url('img/ocean.jpg');
+	height:35em;
+}
+/*fine-tune spacing adjustments
+*******************************************************/
+/*add space to quote at top of page*/
+#quote{
+	margin-top:2em;
+	padding:1.75em 0 1.75em 0;
+}
+#highlights{
+	text-align:center;
+}
+/*center text for framework highlights and button demo*/
+#button-demo {
+	text-align:center;
+	margin-top:1.5em;
+}
+
+/*padding above column-width paragraph on non-mobile screens*/
+@media only screen and (min-width:568px){
+	#cw-paragraph{padding-top:1.9em;}
+}
+
+/*space above demo form*/
+#demo-form{margin-top:2em;} 
+
+/*space above demo form submit button*/
+#forms input[type=submit]{margin-top:1.5em;}
+
+/*add some spacing on blockquote demo at bottom of page*/
+#quote-demo blockquote{margin-top:2.5em;}
+
+/*button at bottom of page*/
+#btm-dl{
+	text-align:center;
+	padding-top:4em;
+	padding-bottom:4em;
+}
+
+/*set column widths on demo table
+*******************************************************/
+#table-demo thead th:first-child{
+	width:58%;
+}
+/*set footer bg color*/
+footer{
+	background-color:#ababab;
+	padding-top:5em;
+	padding-bottom:7em;
+	margin-top:5em;
+}
+
+/*code example formatting
+*******************************************************/
+code{
+	font-family:monospace;
+	line-height:1.7em;
+	white-space:pre;
+	display:block;
+	padding:1em;
+	margin-bottom:0.75em;
+	border:1px #ababab solid;
+	overflow-x:auto;
+}
+.tag{color:blue;}
+.attr-name, .class{color:red;}
+.attr-val{color:purple;}
+.comment{color:#008000;}
+.id{color:#0080ff;}
+.property{color:#8080c0;}
+
+/*grid and nesting demo spacing and color
+*******************************************************/
+.demo, .nest-demo{
+	padding-top:2em;
+}
+.demo>div, .demo>div>div{
+	border-radius:5px;
+	margin:0.3125em 1.25em 0.3125em 1.25em;
+	padding:0.625em 0;
+}
+.demo>div, .nest-demo>div{
+	background-color:#c2c2c2;
+}
+.demo>div>div, .nest-demo>div>div>div{
+	background-color:#ababab;
+}
+.nest-demo .nest .nest div {
+	background-color:#878787;
+}
+.nest-demo>div{
+	margin-top:0.3125em;
+}
+.nest-demo>div>div{
+	padding-bottom:0;
+}
+.nest-demo>div, .nest-demo>div>div>div, .nest-demo .nest .nest div{
+	padding-bottom:0.625em;
+}
+.nest-demo>div, .nest-demo>div>div, .nest-demo>div>div>div, .nest-demo .nest .nest div{
+	border-radius:5px;
+	padding-top:0.625em;
+	}
+.nest-demo .nest .nest div{
+	margin-top:0.625em;
+}

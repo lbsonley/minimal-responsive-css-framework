@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Minimal Response CSS Framework | Ben Sonley</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Ben Sonley">
+	<meta name="description" content="Minimal Responsive CSS framework. A 
+	four column grid framework with built in responsive image and icon classes. 
+	Includes styling for buttons, lists, tables, forms and blockquotes.">
+	<link rel="stylesheet" href="reset/my-reset.css">
+	
+
+	<link rel="stylesheet" href="reset/normalize.css">
+	<link rel="stylesheet" href="min-res.css">
+	<link rel="stylesheet" href="stylesheet.css">
+	<!--link rel="stylesheet" type="text/css" href="../css/tb-menu.css">
+	<link rel="icon" type="image/x-icon" href="../favicon.ico"-->
+</head>
+<body>
+		<!--Header and Main Navigation
+		--------------------------------------------------------------------->
+<!--section id="title-bar">
+	<div class="container">
+		<div class="one-column">
+			<h1 id="title"><a href="http://bensonley.com/">bs</a></h1>
+			<span id="nav"></span>
+		</div>
+	</div>
+</section>
+<section>
+	<div id="menu">
+		<ul>
+			<li><a href="http://bensonley.com/">Projects</a></li>
+			<li><a href="http://bensonley.com/about/">About</a></li>
+			<li><a href="http://bensonley.com/resume/">Resume</a></li>
+		</ul>
+	</div>
+</section-->
+	<!--header
+	------------------------------------------------------------------------------>
+	<section>
+		<div class="container">
+			<div class="one-column">
+				<div class="title">
+					<h1>Minimal Responsive</h1>
+					<h5>A Simple CSS Framework</h3>
+					<a class="button bright" target="_blank" href="http://github.com/lbsonley/minimal-responsive-css-framework">Download</a>
+				</div>
+			</div>
+		</div>
+		<div class="container" id="quote">
+			<div class="four-column">
+			</div>
+			<div class="two-column">
+				<blockquote>
+					<p>Everything should be made as simple as possible, but not simpler.</p>
+					<cite><p>Albert Einstein</p></cite>
+				</blockquote>
+			</div>
+			<div class="four-column">
+			</div>
+		</div>
+	</section>
+	<!--highlights
+	------------------------------------------------------------------------------>
+	<section id="highlights">
+	<div class="container">
+		<div class="three-column">
+			<div>
+			<img class="cw-icon" src="../icons/basic_tablet.png">
+			</div>
+			<h4>Responsive</h4>
+			<p>Minimal Responsive is a mobile-first, four column CSS framework.</p>
+		</div>
+		<div class="three-column">
+			<img class="cw-icon" src="../icons/basic_photo.png">
+			<h4>Image Focused</h4>
+			<p>Priority was placed on integrating responsive images and icons.</p>
+		</div>
+		<div class="three-column">
+			<img class="cw-icon" src="../icons/basic_pencil_ruler_pen.png">
+			<h4>Feature Rich</h4>
+			<p>Includes styles for headings, list, tables, buttons, forms and blockquotes.</p>
+		</div>
+	</div>
+	</section>
+	<hr>
+	<!--columns
+	------------------------------------------------------------------------------>
+	<section id="columns">
+	<div class="container">
+		<div class="two-column">
+			<h3>Four Column Grid</h3>
+			<p>Minimal Responsive's layout configurations are 
+			limited to four columns for the sake of simplicity. 
+			At less than 568px all columns are full width and 
+			stacked.</p>
+			<p>Sidebar style layouts are acheived by using the 
+			<span class="so">.two-three-column</span> and 
+			<span class="so">.three-four-column</span> classes, 
+			bearing in mind the document flow and it's implications 
+			on these layouts on small screens.</p> 
+			<p>The <span class="so">.container</span> class is used 
+			to center the columns on the page so all column's should 
+			be nested inside of a <span class="so">.container</span>.</p>
+			<p>Rows should be filled completely to ensure proper 
+			stacking. Empty column's can be used as placeholders.</p>
+			<p></p> 
+		</div>
+		<div class="two-column">
+		<h6 class="h3-h6-inline">{ HTML }</h6>
+<code><span class="tag">&#60;div</span> <span class="attr-name">class</span>=<span class="attr-val">"container"</span><span class="tag">&#62;</span>
+  <span class="tag">&#60;div</span> <span class="attr-name">class</span>=<span class="attr-val">"three-column"</span><span class="tag">&#62;</span>
+    <span class="comment">&#60;!--Some code--></span>
+  <span class="tag">&#60;/div&#62;</span>
+  <span class="tag">&#60;div</span> <span class="attr-name">class</span>=<span class="attr-val">"three-column"</span><span class="tag">&#62;</span>
+    <span class="comment">&#60;!--Some code--></span>
+  <span class="tag">&#60;/div&#62;</span>
+  <span class="tag">&#60;div</span> <span class="attr-name">class</span>=<span class="attr-val">"three-column"</span><span class="tag">&#62;</span>
+    <span class="comment">&#60;!--Some code--></span>
+  <span class="tag">&#60;/div&#62;</span>
+<span class="tag">&#60;/div&#62;</span>
+</code>
+		</div>
+	</div>
+	<!--column demo
+	------------------------------------------------------------------------------>
+	<div class="container demo">
+		<div class="one-column">
+			&#60;div class="one-column"&#62;
+		</div>
+		<div class="two-column">
+			&#60;div class="two-column"&#62;
+		</div>
+		<div class="two-column">
+			&#60;div class="two-column"&#62;
+		</div>
+		<div class="three-column">
+			&#60;div class="three-column"&#62;
+		</div>
+		<div class="three-column">
+			&#60;div class="three-column"&#62;
+		</div>
+		<div class="three-column">
+			&#60;div class="three-column"&#62;
+		</div>
+		<div class="two-three-column">
+			&#60;div class="two-three-column"&#62;
+		</div>
+		<div class="three-column">
+			&#60;div class="three-column"&#62;
+		</div>
+		<div class="four-column">
+			&#60;div class="four-column"&#62;
+		</div>
+		<div class="four-column">
+			&#60;div class="four-column"&#62;
+		</div>
+		<div class="four-column">
+			&#60;div class="four-column"&#62;
+		</div>
+		<div class="four-column">
+			&#60;div class="four-column"&#62;
+		</div>
+		<div class="two-column">
+			&#60;div class="two-column"&#62;
+		</div>
+		<div class="four-column">
+			&#60;div class="four-column"&#62;
+		</div>
+		<div class="four-column">
+			&#60;div class="four-column"&#62;
+		</div>
+		<div class="three-four-column">
+			&#60;div class="three-four-column"&#62;
+		</div>
+		<div class="four-column">
+			&#60;div class="four-column"&#62;
+		</div>
+	</div>
+		<hr>
+		<!--nesting columns
+		---------------------------------------------------------------------------->
+		<div class="container" id="nesting">
+			<div class="two-column">
+				<h3>Nesting Columns</h3>
+				<p>Columns can be nested by placing a <span class="so">
+				&#60;div&#62;</span> with the <span class="so">.nest</span> 
+				class around columns that you want nested. This allows for more 
+				robust layouts in an otherwise simple column framework.</p>
+				<p>When nesting columns as when creating sidebar style layouts, 
+				it is important to keep the document flow in mind. Nesting is 
+				supported up to two levels.</p>
+			</div>
+			<div class="two-column">
+			<h6 class="h3-h6-inline">{ HTML }</h6>
+<code><span class="tag">&#60;div</span> <span class="attr-name">class</span>=<span class="attr-val">"one-column"</span><span class="tag">&#62;</span>
+  <span class="tag">&#60;div</span> <span class="attr-name">class</span>=<span class="attr-val">"nest"</span><span class="tag">&#62;</span>
+    <span class="tag">&#60;div</span> <span class="attr-name">class</span>=<span class="attr-val">"two-column"</span><span class="tag">&#62;</span>
+    <span class="tag">&#60;/div&#62;</span>
+    <span class="tag">&#60;div</span> <span class="attr-name">class</span>=<span class="attr-val">"two-column"</span><span class="tag">&#62;</span>
+    <span class="tag">&#60;/div&#62;</span>
+  <span class="tag">&#60;/div&#62;</span>
+<span class="tag">&#60;/div&#62;</span>
+</code>
+			</div>
+		</div>
+		<!--Nesting Demo
+		---------------------------------------------------------------------------->
+		<div class="container nest-demo">
+			<div class="one-column">
+				&#60;div class="one-column"&#62;
+				<div class="nest">
+					<div class="two-column">
+						&#60;div class="two-column"&#62;
+							<div class="nest">
+								<div class="four-column">
+									&#60;div class="four-column"&#62;
+								</div>
+								<div class="four-column">
+									&#60;div class="four-column"&#62;
+								</div>
+							</div>
+					</div>
+					<div class="two-column">
+						&#60;div class="two-column"&#62;
+					</div>
+				</div>
+				<div class="nest">
+					<div class="four-column">
+						&#60;div class="four-column"&#62;
+					</div>
+					<div class="four-column">
+						&#60;div class="four-column"&#62;
+					</div>
+					<div class="four-column">
+						&#60;div class="four-column"&#62;
+					</div>
+					<div class="four-column">
+						&#60;div class="four-column"&#62;
+					</div>
+				</div>
+			</div>
+			<div class="two-column">
+				&#60;div class="two-column"&#62;
+				<div class="nest">
+					<div class="four-column">
+						&#60;div class="four-column"&#62;
+					</div>
+					<div class="four-column">
+						&#60;div class="four-column"&#62;
+					</div>
+				</div>
+			</div>
+			<div class="two-column">
+				&#60;div class="two-column"&#62;
+				<div class="nest">
+					<div class="four-column">
+						&#60;div class="four-column"&#62;
+					</div>
+					<div class="four-column">
+						&#60;div class="four-column"&#62;
+					</div>
+				</div>
+			</div>
+			<div class="two-three-column">
+				&#60;div class="two-three-column"&#62;
+				<div class="nest">
+					<div class="three-column">
+						&#60;div class="three-column"&#62;
+					</div>
+					<div class="three-column">
+						&#60;div class="three-column"&#62;
+					</div>
+				</div>
+			</div>
+			<div class="three-column">
+				&#60;div class="three-column"&#62;
+			</div>
+			<div class="three-four-column">
+				&#60;div class="three-four-column"&#62;
+				<div class="nest">
+					<div class="four-column">
+						&#60;div class="four-column"&#62;
+					</div>
+					<div class="four-column">
+						&#60;div class="four-column"&#62;
+					</div>
+					<div class="four-column">
+						&#60;div class="four-column"&#62;
+					</div>
+				</div>
+			</div>
+			<div class="four-column">
+				&#60;div class="four-column"&#62;
+			</div>
+		</div>
+	</section>
+	<!--full width image
+	----------------------------------------------------------------------------->
+	<section id="full-width-image">
+	<div class="fw-img" id="fw-img">
+	</div>
+	<div class="container">
+		<div class="two-column">
+			<h3>Full Width Images</h3>
+			<p>Modern web design relies heavily on imagery 
+			to make an impact. As a result, a high priority was placed 
+			on including responsive, full width images in Minimal Responsive.</p>
+			<p>For full width images, simply give a <span class="so">
+			&#60;div&#62;</span> element the <span class="so">
+			.fw-img</span> class and a <span class="so">#unique-id</span>. 
+			The <span class="so">.image</span> class takes care of 
+			positioning and sizing the image.</p>
+			<p>In your CSS, set the id's <span class="so">background-image</span>
+			and give it a <span class="so">height</span>. Defining a height is very 
+			important, otherwise the image will not be displayed.</p>
+		</div>
+		<div class="two-column">
+		<h6 class="h3-h6-inline">{HTML}</h6>
+<code><span class="tag">&#60;section&#62;</span>
+  <span class="tag">&#60;div</span> <span class="attr-name">class</span>=<span class="attr-val">"fw-img"</span> <span class="attr-name">id</span>=<span class="attr-val">"some-id"</span><span class="tag">&#62;</span>
+  <span class="tag">&#60;/div&#62;</span>
+<span class="tag">&#60;/section&#62;</span>
+</code>
+			<h6>{CSS}</h6>
+<code>#<span class="id">some-id</span>{
+  <span class="property">background-image</span>:url('img/forest.jpg');
+  <span class="property">height</span>:35em;
+}
+</code>
+		</div>
+	</div>
+	</section>
+	<hr>
+	<!--column-width image
+	----------------------------------------------------------------------------->
+	<section id="column-width-image">
+	<div class="container">
+		<div class="one-column">
+			<h3>Column Width Images</h3>
+			<img class="cw-img" src="img/cold-mountains.jpg">
+		</div>
+		<div class="two-column">
+			<p id="cw-paragraph">Minimal Responsive also has a built in class to handle 
+			column width images. Just place an <span class="so">&#60;img&#62;</span> element 
+			inside of a column, give it the <span class="so">.cw-img</span> class, and the 
+			image will fill it's parent column.</p>
+		</div>
+		<div class="two-column">
+			<h6>{HTML}</h6>
+<code><span class="tag">&#60;div</span> <span class="attr-name">class</span>=<span class="attr-val">"one-column"</span><span class="tag">&#62;</span>
+  <span class="tag">&#60;img</span> <span class="attr-name">class</span>=<span class="attr-val">"cw-img"</span> <span class="attr-name">src</span>=<span class="attr-val">"img/cold-mountains.jpg"</span><span class="tag">&#62;</span>
+<span class="tag">&#60;/div&#62;</span>
+</code>
+		</div>
+	</div>
+	</section>
+	<!--Vertical Center
+	----------------------------------------------------------------------------->
+	<section id="vcenter">
+	<div class="image vcenter-wrap" id="vcenter-demo">
+		<div class="vcenter-box">
+					<h2>Vertically Center Anything</h2>
+					<a class="button bright" target="_blank" href="http://github.com/lbsonley/minimal-responsive-css-framework">download minimal responsive</a>
+		</div>
+	</div>
+	<div class="container">
+		<div class="two-column">
+			<h3>Vertical Centering</h3>
+			<p>Minimal responsive has built in vertical centering classes. 
+			To center content, first create one <span class="so">&#60;div&#62;</span> 
+			with the class <span class="so">.vcenter-wrap</span> and then 
+			another with the class <span class="so">.vcenter-box</span> 
+			inside of it.</p>
+			<p>In order to give <span class="so">.vcenter-wrap</span> 
+			a background-image, add the <span class="so">.image</span> 
+			class and give it a <span class="so">#unique-id</span>. Then give 
+			the id a <span class="so">background-image</span> and 
+			<span class="so">height</span> in your CSS. It is 
+			important to set a height.</p>
+			<p>Columns can be placed inside of the <span class="so">.vcenter-box</span>, 
+			allowing multi-column layouts to be vertically centered in an area on the 
+			page. However, use caution as the <span class="so">.vcenter-wrap</span> 
+			page area has a fixed height and depending on browser width, the content 
+			may overflow.</p>
+		</div>
+		<div class="two-column">
+			<h6 class="h3-h6-inline">{HTML}</h6>
+<code><span class="tag">&#60;div</span> <span class="attr-name">class</span>=<span class="attr-val">"vcenter-wrap image"</span> <span class="attr-name">id</span>=<span class="attr-val">"some-id"</span><span class="tag">&#62;</span>
+  <span class="tag">&#60;div</span> <span class="attr-name">class</span>=<span class="attr-val">"vcenter-box"</span><span class="tag">&#62;</span>
+    <span class="tag">&#60;h3&#62;</span>Vertically Centered<span class="tag">&#60;h3&#62;</span>
+  <span class="tag">&#60;/div&#62;</span>
+<span class="tag">&#60;/div&#62;</span>
+</code>	
+<h6>{CSS}</h6>
+<code>#<span class="id">some-id</span> {
+<span class="property">background-image</span>:url('img/ocean.jpg');
+<span class="property">height</span>:35em;
+}
+</code>
+		</div>
+	</div>
+	</section>
+	<hr>
+	<section id="buttons"><!--buttons
+	------------------------------------------------------------------------------>
+		<div class="container">
+			<div class="two-column">
+				<h3>Buttons</h3>
+				<p>Minimal Reponsive has consistently styled buttons for 
+				<span class="so">&#60;a&#62;nchors</span>, 
+				<span class="so">&#60;button&#62;</span>, 
+				<span class="so">&#60;input type=submit&#62;</span>, and 
+				<span class="so">&#60;input type=button&#62;</span> elements.</p>
+				<p>The <span class="so">&#60;button&#62;</span>, 
+				<span class="so">&#60;input type=submit&#62;</span>, and 
+				<span class="so">&#60;input type=button&#62;</span> 
+				elements are already styled without the need to 
+				add a class.</p>
+				<p><span class="so">&#60;a&#62;nchors</span> 
+				need the <span class="so">.button</span> class. 
+				For a bright button, add the <span class="so">.bright</span> 
+				class to any of the button types.</p>
+				
+			</div>
+			<div class="two-column">
+			<h6 class="h3-h6-inline">{HTML}</h6>
+<code><span class="comment">&#60;!--Normal Buttons--&#62;</span>
+<span class="tag">&#60;a</span> <span class="attr-name">class</span>=<span class="attr-val">"button"</span><span class="tag">&#62;</span>Anchor Button<span class="tag">&#60;/a&#62;</span>
+<span class="tag">&#60;button&#62;</span>Button Element<span class="tag">&#60;/button&#62;</span>
+<span class="tag">&#60;input</span> <span class="attr-name">type</span>=<span class="attr-val">"submit"</span> <span class="attr-name">value</span>=<span class="attr-val">"Input Submit"</span><span class="tag">&#62;</span>
+<span class="tag">&#60;input</span> <span class="attr-name">type</span>=<span class="attr-val">"button"</span> <span class="attr-name">value</span>=<span class="attr-val">"Input Button"</span><span class="tag">&#62;</span>
+</code>
+			</div>
+				<div class="one-column center-text" id="button-demo">
+					<a class="button">Anchor Button</a>
+					<button>Button Element</button>
+					<input type="submit" value="Input Submit">
+					<input type="button" value="Input Button">
+				</div>
+				<div class="one-column center-text">
+					<a class="button bright">Anchor Button</a>
+					<button class="bright">Button Element</button>
+					<input class="button bright" type="submit" value="Input Submit">
+					<input class="button bright" type="button" value="Input Button">
+				</div>
+		</div>
+	</section>
+	<hr>
+	<section id="lists"><!--Lists
+	------------------------------------------------------------------------------>
+	<div class="container">
+		<div class="three-column">
+			<h3>Lists</h3>
+			<p>Minimal Responsive has both ordered and unordered lists styled 
+			to match. Nesting is supported up to one level and allows mixing 
+			between ordered and unordered lists.</p>
+		</div>
+		<div class="three-column">
+			<h6 class="h3-h6-inline">Unordered Lists</h5>
+			<ul>
+			<li>This is an unordered list</li>
+				<ul>
+					<li>Lists can be nested once</li>
+				</ul>
+			<li>Both types of lists can be nested inside one-another</li>
+				<ol>
+					<li>Bullets indicate which type it is</li>
+				</ol>
+			</ul>
+		</div>
+		<div class="three-column">
+			<h6 class="h3-h6-inline">Ordered Lists</h5>
+			<ol>
+			<li>Ordered lists are counted with numbers</li>
+				<ol>
+					<li>They can be nested as well</li>
+				</ol>
+			<li>You can also nest unordered lists inside of them</li>
+				<ul>
+					<li>They are displayed with discs</li>
+				</ul>
+			</ol>
+		</div>
+	</div>
+	</section>
+	<hr>
+	<section id="tables"><!--tables
+	------------------------------------------------------------------------------>
+		<div class="container">
+			<div class="two-column">
+				<h3>Tables</h3>
+				<p>Tables are minimally styled and optimized 
+				for horizontal interpretation. Emphasis was placed 
+				on appropiately padding table cells for easy 
+				readability.</p>
+				<p>When constructing tables, it is necessary to use 
+				<span class="so">&#60;thead&#62;</span> and 
+				<span class="so">&#60;tbody&#62;</span> tags to benefit 
+				from Minimal Responsive's pre-built styles.</p>
+			</div>
+			<div class="two-column">
+				<table id="table-demo">
+					<thead>
+						<th>Surf Spot, Location</th>
+						<th>Wave Type</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Teahupo'o, Tahiti</td>
+							<td>Reef Break</td>
+						</tr>
+						<tr>
+							<td>Rincon, California</td>
+							<td>Point Break</td>
+						</tr>
+						</tr>
+							<td>Hossegor, France</td>
+							<td>Beach Break</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</section>
+	<hr>
+	<section id="forms"><!--forms
+	------------------------------------------------------------------------------>
+		<div class="container">
+			<div class="two-column">
+				<h3>Forms</h3>
+				<p>Several form <span class="so">&#60;input&#62;</span>'s 
+				are style to match Minimal Responsive's look and feel. Form 
+				<span class="so">&#60;input&#62;</span>'s 
+				can be nested inside of columns in order to 
+				achieve the desired form layout.</p>
+				<p>Keep in mind that all columns are stacked on mobile 
+				devices. Form fields should follow left-to-right 
+				document flow in order to ensure proper stacking.</p>
+			</div>
+			<div class="two-column">
+				<section id="inputs">
+					<h6 class="h3-h6-inline">Supported Input Types</h6>
+					<ul>
+						<div class="nest">
+							<div class="four-column">
+								<li>text</li>
+								<li>textarea</li>
+								<li>email</li>
+								<li>radio</li>
+							</div>
+							<div class="four-column">
+								<li>checkbox</li>
+								<li>submit</li>
+								<li>buton</li>
+							</div>
+						</div>
+					</ul>
+				</section>
+			</div>
+		</div>
+		<div class="container" id="demo-form">
+				<form>
+					<div class="two-column">
+						<label for="fname">First Name</label>
+						<input type="text">
+					</div>
+					<div class="two-column">
+						<label for="lname">Last Name</label>
+						<input type="text">
+					</div>
+					<div class="two-column">
+						<label for="email">Email</label>
+						<input type="email">
+					</div>
+					<div class="two-column">
+						<label for="gender">Gender</label>
+						<div class="nest">
+							<div class="four-column">
+								<input type="radio" name="gender" value="male"/>Male
+							</div>
+							<div class="four-column">
+								<input type="radio" name="gender" value="female"/>Female
+							</div>
+						</div>
+					</div>
+					<div class="one-column">
+						<label for="hobbies">Hobbies</label>
+						<div class="nest">
+							<div class="four-column">
+								<input type="checkbox" name="interests" value="hiking">Hiking<br/>
+							</div>
+							<div class="four-column">
+								<input type="checkbox" name="interests" value="yoga">Yoga<br/>
+							</div>
+							<div class="four-column">
+								<input type="checkbox" name="interests" value="camping">Camping<br/>
+							</div>
+							<div class="four-column">
+								<input type="checkbox" name="interests" value="surfing">Surfing<br/>
+							</div>
+						</div>
+					</div>
+					<div class="one-column">
+						<label for="textarea">Text Area</label>
+						<textarea></textarea>
+					</div>
+					<div class="one-column">
+						<input type="submit" value="Submit">
+					</div>
+				</form>
+		</div>
+	</section>
+	<hr>
+	<section id="quote-demo"><!--blockquotes
+	------------------------------------------------------------------------------>
+		<div class="container">
+			<div class="two-column">
+				<h3>Blockquotes</h3>
+				<p>Minimal Responsive's blockquotes are tastefully 
+				styled with open and close quotation marks 
+				automatically injected around the text.</p>
+			</div>
+			<div class="two-column">
+			<h6 class="h3-h6-inline">{HTML}</h6>
+<code><span class="tag">&#60;blockquote&#62;</span>
+  <span class="tag">&#60;p&#62;</span><span class="comment">&#60;--Text to be quoted--&#62;</span><span class="tag">&#60;/p&#62;</span>
+  <span class="tag">&#60;cite&#62;&#60;p&#62;</span><span class="comment">&#60;--Author Name--&#62;</span><span class="tag">&#60;/p&#62;&#60;/cite&#62;</span>
+<span class="tag">&#60;/blockquote&#62;</span>
+</code>
+			</div>
+			<div class="four-column">
+			</div>
+			<div class="two-column">
+				<blockquote>
+					<p>[A] quotation is a handy thing to have about, saving 
+					one the trouble of thinking for oneself, always a laborious 
+					business.</p>
+					<cite><p>A. A. Milne</p></cite>
+				</blockquote>
+			</div>
+			<div class="four-column">
+			</div>
+			<div class="one-column" id="btm-dl">
+			<a class="button bright" target="_blank" href="http://github.com/lbsonley/minimal-responsive-css-framework">download minimal responsive</a>
+		</div>
+		</div>
+		
+	</section>
+	<script type="text/javascript" src="../js/menu-drop-down.js"></script>
+</body>
+</html>

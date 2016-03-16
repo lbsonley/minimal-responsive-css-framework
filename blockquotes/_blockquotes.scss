@@ -1,0 +1,35 @@
+/*BLOCKQUOTES
+*******************************************************/
+blockquote{
+	width:80%;
+	margin:0 auto;
+	position:relative;
+}
+blockquote>p{
+	font-size:1.1em;
+	font-style:oblique;
+	text-align:center;
+}
+blockquote>cite>p{
+	text-align:center;
+	font-style:italic;
+	padding-bottom:0px;
+}
+blockquote>cite>p:before{
+	content:'\2013';
+	margin-right:0.5em;
+}
+blockquote>p:before, 
+blockquote>p:after{
+	font-size:3em;
+	line-height:0em;
+}
+blockquote>p:before{
+	content:'\201C';
+	vertical-align:-0.35em;
+	padding-right:0.25em;
+}
+blockquote>p:after{
+	content:"\201D";
+	vertical-align:-0.4em;
+}
