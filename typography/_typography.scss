@@ -10,6 +10,11 @@ html{
 	font-family: $font-fam;
 	text-align:left;
 }
+p, li {
+	font-size:0.9em;
+	word-spacing:-0.1px;
+	line-height:1.5em;
+}
 /*TYPOGRAPHY
 *******************************************************/
 h1, 
@@ -43,8 +48,5 @@ h6{
 	padding-bottom:0.5em;
 }
 p{
-	font-size:0.9em;
-	word-spacing:-0.1px;
-	line-height:1.5em;
 	padding-bottom:1em;
 }
