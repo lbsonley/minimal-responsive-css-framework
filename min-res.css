@@ -1,16 +1,5 @@
 /*my reset | a mixture of meyer-web and normalize
 *************************************************/
-html {
-  background-color: #f8f8f8;
-  color: #252525;
-  text-align: left;
-  font-family: sans-serif;
-  /*normalize - prevent iOS and IE text 
-  size adjust after device orientation 
-  change, without disabling user zoom*/
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%; }
-
 html, body {
   /*removes white space on right of screen on iPhone*/
   overflow-x: hidden;
@@ -65,34 +54,6 @@ html {
   /* 2 */
   -webkit-text-size-adjust: 100%;
   /* 2 */ }
-
-/**
- * Remove default margin.*/
-body {
-  margin: 0; }
-
-/* HTML5 display definitions
-   ========================================================================== */
-/**
- * Correct `block` display not defined for any HTML5 element in IE 8/9.
- * Correct `block` display not defined for `details` or `summary` in IE 10/11
- * and Firefox.
- * Correct `block` display not defined for `main` in IE 11.
- */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-menu,
-nav,
-section,
-summary {
-  display: block; }
 
 /**
  * 1. Correct `inline-block` display not defined in IE 8/9.
@@ -551,6 +512,14 @@ hr {
   hr {
     width: 1280px;
     margin: 6em auto; } }
+/*base styles
+*******************************************************/
+html {
+  background-color: #f8f8f8;
+  color: #252525;
+  font-family: sans-serif;
+  text-align: left; }
+
 /*TYPOGRAPHY
 *******************************************************/
 h1,
@@ -694,18 +663,18 @@ input[type=password] {
   width: 90%;
   font-size: 0.9em;
   line-height: 2.25em;
-  border: 1px solid #ababab;
   padding: 0 0.75em 0 0.75em;
+  border: 1px solid #ababab;
   border-radius: 5px; }
 
 textarea {
   width: 90%;
   font-size: 0.9em;
   line-height: 1.6em;
-  border: 1px solid #ababab;
   padding: 1em;
-  border-radius: 5px;
-  height: 7em; }
+  height: 7em;
+  border: 1px solid #ababab;
+  border-radius: 5px; }
 
 input[type=radio],
 input[type=checkbox] {
@@ -728,7 +697,8 @@ input[type=submit] {
   border: 2px solid #919191;
   border-radius: 5px;
   display: inline-block;
-  box-sizing: border-box;
+  -webkit-box-sizing: "border-box";
+  box-sizing: "border-box";
   color: #919191;
   background-color: #fff;
   cursor: pointer; }

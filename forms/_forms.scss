@@ -1,3 +1,11 @@
+$frm-font: 0.9em;
+$brdr: 1px solid #ababab;
+$brdr-radius: 5px;
+
+@mixin border($brdr, $brdr-radius) {
+	border: $brdr;
+	border-radius:$brdr-radius;
+}
 /*FORMS
 *******************************************************/
 label{
@@ -5,29 +13,26 @@ label{
 	font-weight:bold;
 	line-height:1em;
 	margin:1.25em 0 0.5em 0;
-	display:block;
-}
+	display:block; }
+	
 input[type=text], 
 input[type=email], 
 input[type=password]{
 	width:90%;
-	font-size:0.9em;
+	font-size: $frm-font;
 	line-height:2.25em;
-	border:1px solid #ababab;
 	padding:0 0.75em 0 0.75em;
-	border-radius:5px;
-}
+	@include border($brdr, $brdr-radius) }
+
 textarea{
 	width:90%;
 	font-size:0.9em;
 	line-height:1.6em;
-	border:1px solid #ababab;
 	padding:1em;
-	border-radius:5px;
 	height:7em;
-}
+	@include border($brdr, $brdr-radius) }
+
 input[type=radio], 
 input[type=checkbox]{
 	font-size:0.9em;
-	margin:0.5em 0.5em 0.5em 0;
-}
+	margin:0.5em 0.5em 0.5em 0; }

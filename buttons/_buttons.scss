@@ -1,3 +1,12 @@
+$btn-grey: #919191;
+$btn-grey-hover: #5e5e5e;
+$btn-bright-bg: #ffa500;
+$btn-bright-hover: #ff9000;
+
+@mixin box-sizing($val) {
+	-webkit-box-sizing:$val;
+			box-sizing:$val;
+}
 /*BUTTONS
 *******************************************************/
 a.button, 
@@ -11,11 +20,11 @@ input[type=submit] {
 	text-transform:uppercase;
 	margin:0.25em 0.25em 0.25em 0.25em;
 	padding:0.625em 1.25em 0.625em 1.25em;
-	border:2px solid #919191;
+	border:2px solid $btn-grey;
 	border-radius:5px;
 	display:inline-block;
-	box-sizing:border-box;
-	color:#919191;
+	@include box-sizing("border-box");
+	color: $btn-grey;
 	background-color:#fff;
 	cursor:pointer;
 }
@@ -23,20 +32,20 @@ a.button:hover,
 button:hover, 
 input[type=button]:hover, 
 input[type=submit]:hover{
-	color:#5e5e5e;
-	border-color:#5e5e5e;
+	color: $btn-grey-hover;
+	border-color: $btn-grey-hover;
 }
 a.bright, 
 button.bright, 
 input.bright{
 	color:#fff;
-	background-color:#ffa500;
-	border-color:#ffa500;
+	background-color: $btn-bright-bg;
+	border-color: $btn-bright-bg;
 }
 a.bright:hover, 
 button.bright:hover, 
 input.bright:hover{
 	color:#fff;
-	background-color:#ff9000;
-	border-color:#ff9000;
+	background-color: $btn-bright-hover;
+	border-color: $btn-bright-hover;
 }
